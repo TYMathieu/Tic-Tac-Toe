@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Morpion</title>
+  </head>
+  <body>
+    <h1>Morpion</h1>
+    <p id="message"></p>
+    <section id="setter">
+      <label for="joueur1">Joueur 1 : </label
+      ><input type="text" id="joueur1" value="Six" />
+      <select name="avatar1" id="avatar1">
+        <option value="jonathan">Jonathan</option>
+        <option value="dio">Dio</option>
+        <option value="joseph">Joseph</option>
+        <option value="kira">Kira</option>
+        <option value="doppio">Doppio</option></select
+      ><br />
+      <label for="joueur2">Joueur 2 : </label
+      ><input type="text" id="joueur2" value="Mono" />
+      <select name="avatar2" id="avatar2">
+        <option value="jonathan">Jonathan</option>
+        <option value="dio" selected>Dio</option>
+        <option value="joseph">Joseph</option>
+        <option value="kira">Kira</option>
+        <option value="doppio">Doppio</option></select
+      ><br />
+      <input type="button" id="start" value="Jouer" onclick="button()" />
+    </section>
+    <div class="flex" id="mainsection">
+      <section id="interface1">
+        <figure>
+          <img src="" alt="image du joueur 1" id="profil1" />
+          <figcaption id="name1"></figcaption>
+          <p id="score1"></p>
+        </figure>
+      </section>
+      <section id="morpion"></section>
+      <section id="interface2">
+        <figure>
+          <img src="" alt="image du joueur 2" id="profil2" />
+          <figcaption id="name2"></figcaption>
+          <p id="score2"></p>
+        </figure>
+      </section>
+    </div>
+    <section id="aftergame">
+      <button id="restart" onclick="newGame()">Rejouer</button>
+      <button id="return" onclick="returnParam()">Recommencer</button>
+      <button id="return" onclick="changeParam()">Pamamètre</button>
+    </section>
+  </body>
+
+  <script src="js/function.js"></script>
+  <script src="js/main.js"></script>
+</html>
