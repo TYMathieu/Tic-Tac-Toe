@@ -1,2 +1,1 @@
-# Tic Tac Toe
- Javascript only
+Jeu de Morpion
